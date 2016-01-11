@@ -1,0 +1,11 @@
+# Testing this shit out.
+
+print ("Howdy!")
+print ("What's your poison?") 
+myPoison = input()
+print("You've got terrible taste but alright. One " + myPoison + " coming right up!")
+print ("Your drink will take about this long to make:") #Maybe switch this to a random question based on length of name.
+print(len(myPoison))
+print("How many ice cubes do you want?")  
+myAnswer = input()
+print(myAnswer + ' it is then!')
