@@ -1,0 +1,22 @@
+# Let's get our drink on! #
+print (30 * '-')
+print ("You walk into a dingy bar and try to order a drink.")
+print ('"Howdy," says the bartender.')
+print ('"What\'s your poison?"') 
+myPoison = input()
+print("\"You've got terrible taste but alright. One " + myPoison + " coming right up!\"")
+print (30 * '-')
+print ('Only a few minutes pass before your drink is slammed in front of you.\n\
+It tastes like hogwash.')
+print (30 * '-')
+myAge = input('"You don\'t look like you\'re from around here. How old are you?"\n\
+')
+ 
+myAge = int(myAge)
+ 
+if myAge < 21:
+        print ('"Geez! You\'re too young to be drinking! Give me that!"')
+elif myAge > 20:
+        print ('"That\'s a fine age."')
+else:    
+        print ('"What\'re you talking about? I asked your age."')
