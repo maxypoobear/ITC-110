@@ -1,0 +1,50 @@
+# ITC-110
+#The setup.
+print ('Hello! Welcome to Madlibs!')
+person = input('Enter a person: ')
+place = input('Enter a place: ')
+action = input ('Enter a action: ')
+
+
+import time #used for any time commands
+import random  #used for generating random integers
+
+#Creating a library of madlibs to be randomly chosen. 
+
+
+
+def getStory(madLib): #defining the random story grabber
+
+    if madLib == 1:
+      return ('1 ' + person + ' ' + place + ' ' + action)
+      
+    elif madLib == 2:
+      return ('2 ' + person + ' ' + place + ' ' + action)
+   
+    elif madLib == 3:
+      return ('3 ' + person + ' ' + place + ' ' + action)
+     
+    elif madLib == 4:
+      return ('4 ' + person + ' ' + place + ' ' + action)
+
+    elif madLib == 5:
+      return ('5 ' + person + ' ' + place + ' ' + action)
+
+    elif madLib == 6:
+      return ('6 ' + person + ' ' + place + ' ' + action)
+
+    elif madLib == 7:
+      return ('7 ' + person + ' ' + place + ' ' + action)
+
+    elif madLib == 8:
+      return ('8 ' + person + ' ' + place + ' ' + action)
+
+  
+  
+r = random.randint(1, 8) # number of options that the grabber will choose out of
+joke = getStory(r)
+print(joke)
+
+
+
+
