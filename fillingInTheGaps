@@ -1,0 +1,10 @@
+import os
+
+os.chdir('/')
+i = 1
+path = 'Users/johnglennvoorhess/delicious'
+for filename in os.listdir('Users/johnglennvoorhess/delicious'):
+    if filename.endswith(".txt") and filename.startswith('spam'):
+        print(filename)
+        os.rename(str(path)+'/'+str(filename), str(path)+'/spam'+str(i)+'.txt')
+        i += 1
